@@ -141,13 +141,16 @@ p {
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
+  margin-left: auto;
+  margin-right: auto;
   background-image: linear-gradient(
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
-  background-size: 1600px;
+  max-width: 1600px;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-title {
@@ -222,17 +225,17 @@ p {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
-.advantage-list .item {
-  width: 270px;
-}
+
 .advantage-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
 .advantage-svg {
   display: flex;
+  width: 270px;
+  height: 120px;
   justify-content: center;
-  padding: 25px 100px;
+  align-items: center;
   margin-bottom: 30px;
   border-radius: 4px;
 
@@ -508,7 +511,11 @@ footer {
   border: 1px solid var(--secondary-border-color);
   border-top: none;
 }
-.name-list .item:hover {
+.projects-link {
+  display: block;
+}
+.projects-link:hover,
+.projects-link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
